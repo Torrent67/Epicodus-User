@@ -1,10 +1,13 @@
 .start {
-  height: 200px;
+  height: 400px;
   width: 600px;
   margin-left: 400px;
   background-image: url("img/matrix.gif");
   text-align: center;
   color: lime;
   text-shadow: 1px 1px white;
-
+}
+.start img {
+  margin-top: 50px;
+  border: 1px dashed lime;
 }

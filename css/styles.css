@@ -1,8 +1,10 @@
+body {
+    background-image: url("img/matrix.gif");
+}
 .start {
   height: 800px;
   width: 600px;
   margin-left: 400px;
-  background-image: url("img/matrix.gif");
   text-align: center;
   color: lime;
   text-shadow: 1px 1px white;
@@ -10,4 +12,9 @@
 .start img {
   margin-top: 50px;
   border: 1px dashed lime;
+}
+h1 {
+  margin-left: 550px;
+  color: lime;
+  text-shadow: 3px 3px 40px white;
 }

@@ -1,6 +1,22 @@
 $(document).ready(function(){
   $("#click").click(function(){
     var initial = prompt ("Input random fact about self to generate code name.");
+      var letterCount = initial.length;
+      var firstChar = initial.charAt(0).toUpperCase();
+      var lastChar = initial.charAt(letterCount-1).toUpperCase();
+      var firstLast = capsFirst(firstChar, lastChar);
+      var lastFirst = capsLast(lastChar, firstChar);
+      var sentenceFL = initfl(initial, firstLast);
+      var midpointChar = (letterCount/2);
+      var middle = midway (initial, midpointChar);
+      var buttonOne = button1(middle,sentenceFL);
+      var test = initial.charAt(midpointChar);
+      var reversed = reverseString(buttonOne);
+        alert (buttonOne);
+    })
+
+$("#click2").click(function(){
+  var initial = prompt ("Input random fact about self to generate code name.");
     var letterCount = initial.length;
     var firstChar = initial.charAt(0).toUpperCase();
     var lastChar = initial.charAt(letterCount-1).toUpperCase();
@@ -12,23 +28,7 @@ $(document).ready(function(){
     var buttonOne = button1(middle,sentenceFL);
     var test = initial.charAt(midpointChar);
     var reversed = reverseString(buttonOne);
-    alert (buttonOne);
-    })
-
-$("#click2").click(function(){
-  var initial = prompt ("Input random fact about self to generate code name.");
-  var letterCount = initial.length;
-  var firstChar = initial.charAt(0).toUpperCase();
-  var lastChar = initial.charAt(letterCount-1).toUpperCase();
-  var firstLast = capsFirst(firstChar, lastChar);
-  var lastFirst = capsLast(lastChar, firstChar);
-  var sentenceFL = initfl(initial, firstLast);
-  var midpointChar = (letterCount/2);
-  var middle = midway (initial, midpointChar);
-  var buttonOne = button1(middle,sentenceFL);
-  var test = initial.charAt(midpointChar);
-  var reversed = reverseString(buttonOne);
-  alert (reversed);
+      alert (reversed);
   })
 })
 var capsFirst = function(firstChar, lastChar) {
